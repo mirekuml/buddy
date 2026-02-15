@@ -8,64 +8,27 @@
     <script src="https://buddy.vse.cz/integrations/next/ai-agent-embed.js"></script>
 
     <style>
-        /* BRAND COLORS extracted from VSE logo */
-        :root {
-            --vse-teal: #6FA895; /* Muted teal/green from the 'E' block */
-            --vse-grey: #444444; /* Dark grey from the text */
-            --bg-light: #f9f9f9;
-        }
 
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #ffffff;
-            color: var(--vse-grey);
-            display: flex;
-            flex-direction: column;
-        }
+<!-- Themes and colors -->
+    <style>
+        ai-agent-float-container {
+            --primary: #00A499;
+            --primary-contrast: #ffffff;
 
-        /* HEADER SECTION */
-        .header-container {
-            padding: 20px 25px;
-            border-bottom: 4px solid var(--vse-teal); /* Brand color accent */
-            background-color: #fff;
-        }
+            --secondary: #466d6a;
+            --neutral-1: #ffffff;
+            --neutral-1000: #000000;
 
-        h1 {
-            margin: 0;
-            font-size: 24px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
+            --warning: #ff0000;
+            --destructive: #ff0000;
+            --success: #00A499;
 
-        .description {
-            margin-top: 10px;
-            font-size: 15px;
-            line-height: 1.5;
-            color: #666;
-            max-width: 800px;
-        }
-
-        /* AGENT CONTAINER */
-        .agent-wrapper {
-            flex: 1; /* Takes up remaining vertical space */
-            width: 100%;
-            position: relative;
-            background-color: var(--bg-light);
-        }
-
-        /* Customize the specific custom element if needed, 
-           though the agent controls its own internal style */
-        ai-agent-embed {
-            display: block;
-            width: 100%;
-            height: 100%;
+            --informative: #333333;
+            --secondary-contrast: #ffffff;
+            --informative-50: #333333;
         }
     </style>
+
 </head>
 <body>
 
